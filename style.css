@@ -1,8 +1,48 @@
 .nav {
-    width:fit-content;
-    margin: 40px;
-    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 20px;
 }
 #poster {
-    width: 200px;
+  width: 200px;
+}
+.hidden {
+  display: none;
+}
+#addtolist {
+  border-radius: 10px;
+  background-color: lightgray;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+#addtolist:hover {
+  background-color: lightgreen;
+  color: grey;
+  animation: alternate-reverse;
+  cursor: pointer;
+}
+#movietitle {
+  text-align: center;
+  margin-top: 20px;
+}
+#poster {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+#rated {
+  text-align: center;
+  margin-top: 20px;
+}
+#genre {
+  text-align: center;
+  margin-top: 20px;
+}
+#plot {
+  text-align: center;
+  margin-top: 20px;
 }
