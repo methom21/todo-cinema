@@ -1,0 +1,49 @@
+.nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  margin-top: 20px;
+}
+#poster {
+  width: 250px;
+}
+.hidden {
+  visibility: hidden;
+}
+#addtolist {
+  display: block;
+  border-radius: 10px;
+  background-color: lightgray;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+#addtolist:hover {
+  background-color: lightgreen;
+  color: grey;
+  animation: alternate-reverse;
+  cursor: pointer;
+}
+#movietitle {
+  text-align: center;
+  margin-top: 20px;
+}
+#poster {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+#rated {
+  text-align: center;
+  margin-top: 20px;
+}
+#genre {
+  text-align: center;
+  margin-top: 20px;
+}
+#plot {
+  text-align: center;
+  margin-top: 20px;
+}
