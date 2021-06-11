@@ -9,7 +9,17 @@ const genreEl = document.querySelector("#genre");
 const plotEl = document.querySelector("#plot");
 const ratingsEl = document.querySelector("#rating");
 const listBtn = document.querySelector("#addtolist");
-
+const firstMovie = document.querySelector("#firstmovie")
+const secondMovie = document.querySelector("#secondmovie")
+const thirdMovie = document.querySelector("#thirdtmovie")
+const fourthtMovie = document.querySelector("#fourthmovie")
+const fifthMovie = document.querySelector("#fifthmovie")
+const sixthMovie = document.querySelector("#sixthmovie")
+const firstPlot = document.querySelector("#firstplot")
+const firstRated = document.querySelector("#firstrated")
+const firstGenre = document.querySelector("#firstgenre")
+const firstTitle = document.querySelector("#firsttitle")
+const firstPoster = document.querySelector("#firstposter")
 function movieSearch(e) {
   e.preventDefault();
   fetch("http://www.omdbapi.com/?apikey=b19732b0&t=" + inputfield.value)
@@ -33,7 +43,22 @@ function movieToList(e) {
   
 
 }
-listBtn.addEventListener("click", )
+listBtn.addEventListener("click", function(){
+  fetch("http://www.omdbapi.com/?apikey=b19732b0&t=" + inputfield.value)
+    .then(function (foo) {
+      return foo.json();
+    })
+    .then(function (foo) {
+      console.log(foo.Title);
+      firstPlot.textContent= foo.Plot
+      firstRated.textContent= foo.Rated
+      firstGenre.textContent= foo.Genre
+      firstPoster.textContent= foo.Poster
+      firstTitle.textContent= foo.Title
+
+      firstMovie.append(firstPlot,firstRated,firstGenre,firstTitle,firstPoster)
+})
+
 var watchListForm = document.querySelector("watchList-form");
 var movieText = document.querySelector("movie-text");
 var toWatch = document.querySelector("watchListItems");
@@ -124,3 +149,4 @@ movieModal.addEventListener("click", gladiatorInfo)
 movieModal.addEventListener("click", jjInfo)
 movieModal.addEventListener("click", hottubInfo)
 movieModal.addEventListener("click", departedInfo)
+})
