@@ -29,3 +29,8 @@ function movieSearch(e) {
 }
 
 formEl.addEventListener("submit", movieSearch);
+function movieToList(e) {
+  
+
+}
+listBtn.addEventListener("click", )
