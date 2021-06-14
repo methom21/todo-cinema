@@ -153,9 +153,9 @@ listBtn.addEventListener("click", function(){
     })
     .then(function (foo) {
       console.log(foo.Title);
-      firstTitle.textContent= foo.Title
+      firstTitle.textContent = foo.Title
       console.log(foo.Plot)
-      firstMovie.append(firstTitle)
+      
       
 })
 
