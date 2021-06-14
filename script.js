@@ -9,7 +9,7 @@ const genreEl = document.querySelector("#genre");
 const plotEl = document.querySelector("#plot");
 const ratingsEl = document.querySelector("#rating");
 const listBtn = document.querySelector("#addtolist");
-const firstMovie = document.querySelector("#firstmovie")
+const firstMovie = document.querySelector("#firstmovie.collection-item")
 const secondMovie = document.querySelector("#secondmovie")
 const thirdMovie = document.querySelector("#thirdtmovie")
 const fourthtMovie = document.querySelector("#fourthmovie")
@@ -50,13 +50,10 @@ listBtn.addEventListener("click", function(){
     })
     .then(function (foo) {
       console.log(foo.Title);
-      firstPlot.textContent= foo.Plot
-      firstRated.textContent= foo.Rated
-      firstGenre.textContent= foo.Genre
-      firstPoster.textContent= foo.Poster
       firstTitle.textContent= foo.Title
-
-      firstMovie.append(firstPlot,firstRated,firstGenre,firstTitle,firstPoster)
+      console.log(foo.Plot)
+      firstMovie.append(firstTitle)
+      
 })
 
 var watchListForm = document.querySelector("watchList-form");

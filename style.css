@@ -3,7 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 350px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 #poster {
   width: 250px;
@@ -50,4 +50,14 @@
 #yourmovies {
   text-align: center;
   
+}
+#firsttitle {
+  text-align: center;
+}
+.collection {
+  border: 2px;
+  border-color: black;
+}
+#search {
+  text-align: center;
 }
