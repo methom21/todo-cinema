@@ -125,7 +125,7 @@ const firstTitle = document.querySelector("#firsttitle")
 const firstPoster = document.querySelector("#firstposter")
 function movieSearch(e) {
   e.preventDefault();
-  fetch("http://www.omdbapi.com/?apikey=b19732b0&t=" + inputfield.value)
+  fetch("https://www.omdbapi.com/?apikey=b19732b0&t=" + inputfield.value)
     .then(function (foo) {
       return foo.json();
     })
@@ -147,7 +147,7 @@ function movieToList(e) {
 
 }
 listBtn.addEventListener("click", function(){
-  fetch("http://www.omdbapi.com/?apikey=b19732b0&t=" + inputfield.value)
+  fetch("https://www.omdbapi.com/?apikey=b19732b0&t=" + inputfield.value)
     .then(function (foo) {
       return foo.json();
     })
@@ -155,7 +155,7 @@ listBtn.addEventListener("click", function(){
       console.log(foo.Title);
       firstTitle.textContent = foo.Title
       console.log(foo.Plot)
-      
+      secondTitle.textContent = foo.Title
       
 })
 
@@ -174,7 +174,7 @@ var shutterEl= document.querySelector("#shutterPlot");
 function gladiatorInfo(e) {
   e.preventDefault();
   console.log("info");
-fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt0172495")
+fetch("https://www.omdbapi.com/?apikey=b19732b0&i=tt0172495")
  .then(function(foo){
    return foo.json();
 }).then(function(foo){
@@ -186,7 +186,7 @@ fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt0172495")
 function departedInfo(e) {
   e.preventDefault();
   console.log("info");
-fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt0144048")
+fetch("https://www.omdbapi.com/?apikey=b19732b0&i=tt0144048")
  .then(function(foo){
    return foo.json();
 }).then(function(foo){
@@ -197,7 +197,7 @@ fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt0144048")
 function hottubInfo(e) {
   e.preventDefault();
   console.log("info");
-fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt1231587")
+fetch("https://www.omdbapi.com/?apikey=b19732b0&i=tt1231587")
  .then(function(foo){
    return foo.json();
 }).then(function(foo){
@@ -208,7 +208,7 @@ fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt1231587")
 function guardiansInfo(e) {
   e.preventDefault();
   console.log("info");
-fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt2015381")
+fetch("https://www.omdbapi.com/?apikey=b19732b0&i=tt2015381")
  .then(function(foo){
    return foo.json();
 }).then(function(foo){
@@ -219,7 +219,7 @@ fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt2015381")
 function jjInfo(e) {
   e.preventDefault();
   console.log("info");
-fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt0068762")
+fetch("https://www.omdbapi.com/?apikey=b19732b0&i=tt0068762")
  .then(function(foo){
    return foo.json();
 }).then(function(foo){
@@ -230,7 +230,7 @@ fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt0068762")
 function shutterInfo(e) {
   e.preventDefault();
   console.log("info");
-fetch("http://www.omdbapi.com/?apikey=b19732b0&i=tt1130884")
+fetch("https://www.omdbapi.com/?apikey=b19732b0&i=tt1130884")
  .then(function(foo){
    return foo.json();
 }).then(function(foo){
