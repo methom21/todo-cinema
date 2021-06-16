@@ -47,3 +47,17 @@
   text-align: center;
   margin-top: 20px;
 }
+#yourmovies {
+  text-align: center;
+  
+}
+#firsttitle {
+  text-align: center;
+}
+.collection {
+  border: 2px;
+  border-color: black;
+}
+#search {
+  text-align: center;
+}
